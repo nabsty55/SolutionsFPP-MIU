@@ -2,20 +2,18 @@ package practice;
 
 public class IsLegalNumber {
 	static int isLegalNumber(int[] a, int n) {
-		int countIllegal = 0;
+		
 		for(int i = 0; i < a.length; i++) {
 			if(a[i] >= n) {
-				countIllegal ++;
-				break;
+				return 0;
 			}
 		}
-		if(countIllegal == 0)
-			return 1;
-		return 0;
+		
+		return 1;
 	}
 
 	public static void main(String[] args) {
-		int [] arr = {3,7,1};
+		int [] arr = {3,5,1};
 		System.out.println(isLegalNumber(arr, 6));
 
 	}
