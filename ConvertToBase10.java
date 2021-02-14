@@ -2,14 +2,13 @@ package practice;
 
 public class ConvertToBase10 {
 	int isLegalNumber(int[] a, int n) {
-		int countIllegal = 0;
+		
 		for(int i = 0; i < a.length; i++) {
 			if(a[i] >= n)
-				countIllegal ++;
+				return 0;
 		}
-		if(countIllegal == 0)
-			return 1;
-		return 0;
+		
+		return 1;
 	}
 	int convertToBase10(int[] a, int base) {
 		int sum = 0;
