@@ -16,18 +16,18 @@ public class IsHollow {
 				
 			}
 			if(a[i] == 0) {
-				 for(int j=i; j < a.length; j++ ) {
+				 for(int j=i; j < a.length; j++, i++ ) {
 					if(a[j] == 0) {
 						countZeroes ++;
-						i ++;
+//						i ++;
 						continue;
 					}
 					if(a[j] != 0) {
-						for(int k=j; k < a.length; k++) {
+						for(int k=j; k < a.length; k++, i++, j++) {
 							if(a[k] != 0) {
 								countFollowing ++;
-								i ++;
-								j ++;
+//								i ++;
+//								j ++;
 								continue;
 								
 								
