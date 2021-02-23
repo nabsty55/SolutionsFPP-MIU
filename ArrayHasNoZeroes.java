@@ -5,10 +5,10 @@ public class ArrayHasNoZeroes {
 		
 		for( int i = 0; i < a.length; i++ ) {
 			if(a[i]== 0)
-				return 0;
+				return 1;
 		}
 		
-		return 1;
+		return 0;
 	}
 
 	public static void main(String[] args) {
