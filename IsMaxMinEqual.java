@@ -10,14 +10,13 @@ public class IsMaxMinEqual {
 		int minValue = a[0];
 		int countMaxValues = 0;
 		int countMinValues = 0;
-		int countDiffValues = 0;
-		
-		
 		
 		for(int i=0; i< a.length;i++) {
 			for(int j=0; j < a.length; j++) {
 				if(a[i] != a[j])
-					countDiffValues ++;
+					break;
+				if(i == a.length-1)
+					return 0;
 			
 			}
 		}
@@ -33,7 +32,7 @@ public class IsMaxMinEqual {
 			if(a[l] == minValue)
 				countMinValues ++;
 		}
-		if((countDiffValues > 0) && (countMaxValues == countMinValues))
+		if(countMaxValues == countMinValues)
 			return 1;
 		return 0;
 		
