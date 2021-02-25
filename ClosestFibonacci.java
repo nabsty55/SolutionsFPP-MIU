@@ -17,7 +17,7 @@ public class ClosestFibonacci {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(closestFibonacci(13));
+		System.out.println(closestFibonacci(100));
 
 	}
 
