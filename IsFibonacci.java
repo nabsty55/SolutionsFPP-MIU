@@ -2,6 +2,7 @@ package practice;
 
 public class IsFibonacci {
 	static int isFibonacci(int n) {
+		
 		int previous = 1;
 		int next = 1;
 		while(next < n) {
@@ -15,7 +16,7 @@ public class IsFibonacci {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(isFibonacci(34));
+		System.out.println(isFibonacci(13));
 
 	}
 
