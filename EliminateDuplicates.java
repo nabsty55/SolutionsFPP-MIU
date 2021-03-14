@@ -16,10 +16,10 @@ public class EliminateDuplicates {
 		}
 		int[] arr = new int[count];
 		int index = 0;
-		outer: for(int i=0, k=0; i < a.length; i++, k++) {
+		outer2: for(int i=0, k=0; i < a.length; i++, k++) {
 			for(int j=0; j < k; j++) {
 				if(a[i] == a[j])
-					continue outer;
+					continue outer2;
 			}
 			arr[index] = a[i];
 			index ++;
